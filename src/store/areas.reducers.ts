@@ -2,9 +2,9 @@ import { createReducer } from "@reduxjs/toolkit"
 import { v4 as generateUUID } from "uuid"
 import { getStoredState } from "./utils"
 import * as actions from "./areas.actions"
-import type { State } from "./areas"
+import type { AreasState } from "./areas"
 
-const emptyState: State = {
+const emptyState: AreasState = {
   [generateUUID()]: {
     title: 'Your first area',
     position: {
@@ -24,7 +24,7 @@ const emptyState: State = {
 }
 
 export default createReducer(
-  getStoredState<State>('areas') ?? emptyState, 
+  getStoredState<AreasState>('areas') ?? emptyState, 
   builder => builder
     .addCase(actions.updatePosition, (state, action) => {
       const { target, ...position } = action.payload

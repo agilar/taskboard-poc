@@ -1,0 +1,21 @@
+.area {
+  background: #373c47;
+  border-radius: 3px;
+  color: beige;
+}
+
+.heading {
+  padding: 16px;
+  border-bottom: 1px solid rgba(black, .2);
+  font: 400 14px/1 "Montserrat Alternates", sans-serif;
+  transition: all .2s ease-in-out;
+  cursor: grab;
+  border-radius: 3px 3px 0 0;
+  user-select: none;
+  &:hover {
+    background: green;
+  }
+  &:active {
+    cursor: grabbing;
+  }
+}

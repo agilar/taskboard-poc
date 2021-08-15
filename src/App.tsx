@@ -1,30 +1,15 @@
-import React from 'react';
-import { Provider as StoreProvider } from "react-redux";
-import logo from './logo.svg';
-import './App.css';
-import store from "./store"
+import { Provider as StoreProvider } from "react-redux"
+import { Header, Grid } from "components"
+import { store } from "./store"
 
-function App() {
+import "normalize.css"
+import "styles/main.scss"
+
+export default function App() {
   return (
     <StoreProvider store={store}>
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.tsx</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Header />
+      <Grid />
     </StoreProvider>
-  );
+  )
 }
-
-export default App;

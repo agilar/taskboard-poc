@@ -1,0 +1,30 @@
+.header {
+  padding: 16px;
+  display: flex;
+  gap: 16px;
+}
+
+.bar {
+  background: rgba(black, .3);
+  backdrop-filter: blur(3px);
+  border-radius: 8px;
+  color: #e8e9b9;
+  padding: 16px;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 16px;
+}
+
+.logo {
+  font: 600 20px/1 "Montserrat Alternates", sans-serif;
+}
+
+.projectName {
+  font: 400 18px/1 "Montserrat Alternates", sans-serif;
+}
+
+.delimiter {
+  width: 1px;
+  height: 100%;
+  background: rgba(white, .2);
+}

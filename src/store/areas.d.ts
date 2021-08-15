@@ -22,6 +22,6 @@ export interface Area {
   size: Size,
 }
 
-export interface State {
+export interface AreasState {
   [id: string]: Area
 }

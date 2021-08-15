@@ -1,0 +1,12 @@
+.grid {
+  display: grid;
+  gap: 16px;
+  min-height: calc(100vh - 84px);
+  padding: 0 16px;
+  overflow: auto;
+}
+
+.placeholder {
+  border: 1px dashed rgba(white, .3);
+  border-radius: 3px;
+}
